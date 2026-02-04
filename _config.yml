@@ -11,6 +11,13 @@ include:
 sass:
   style: compressed
 
+webrick:
+  headers:
+    "/*.mp4":
+      Content-Type: video/mp4
+    "/*.mkv":
+      Content-Type: video/x-matroska
+
 exclude:
   - Gemfile
   - Gemfile.lock
