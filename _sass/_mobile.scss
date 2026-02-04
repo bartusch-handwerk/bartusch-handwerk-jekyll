@@ -70,14 +70,15 @@
     letter-spacing: 1px;
     text-decoration: none;
 
-    &:hover {
-      color: $color-nav-hover;
-      background: rgba(0, 0, 0, 0.1);
+    .mdi {
+      font-size: 0.75rem;
+      vertical-align: middle;
     }
 
-    &.external::after {
-      content: " ↗";
-      font-size: 0.7rem;
+    &:hover,
+    &.active {
+      color: $color-nav-hover;
+      background: rgba(0, 0, 0, 0.1);
     }
   }
 }
@@ -99,8 +100,7 @@
   letter-spacing: 1px;
   cursor: pointer;
 
-  &::after {
-    content: "+";
+  .mdi {
     font-size: 1rem;
     transition: transform $transition-speed;
   }
@@ -123,8 +123,8 @@
 }
 
 .drawer-submenu-toggle:checked {
-  ~ .drawer-submenu-label::after {
-    transform: rotate(45deg);
+  ~ .drawer-submenu-label .mdi {
+    transform: rotate(180deg);
   }
 
   ~ .drawer-submenu {

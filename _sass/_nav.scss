@@ -50,26 +50,23 @@
     letter-spacing: 1.3px;
     text-decoration: none;
 
-    &:hover {
-      color: $color-nav-hover;
-      text-decoration: none;
+    .mdi {
+      font-size: 0.85rem;
+      vertical-align: middle;
     }
 
-    &.external::after {
-      content: " ↗";
-      font-size: 0.7rem;
+    &:hover,
+    &.active {
+      color: $color-nav-hover;
+      text-decoration: none;
     }
   }
 }
 
 // Dropdown
 .nav-item.has-dropdown {
-  > a::after {
-    content: " ▾";
-    font-size: 0.7rem;
-  }
-
-  &:hover .dropdown {
+  &:hover .dropdown,
+  &.active .dropdown:hover {
     display: block;
   }
 }
@@ -94,14 +91,15 @@
     text-decoration: none;
     white-space: nowrap;
 
-    &:hover {
-      color: $color-nav-hover;
-      background: rgba(0, 0, 0, 0.1);
+    .mdi {
+      font-size: 0.75rem;
+      vertical-align: middle;
     }
 
-    &.external::after {
-      content: " ↗";
-      font-size: 0.7rem;
+    &:hover,
+    &.active {
+      color: $color-nav-hover;
+      background: rgba(0, 0, 0, 0.1);
     }
   }
 }
@@ -109,25 +107,20 @@
 // Hamburger button
 .nav-toggle {
   display: flex;
-  flex-direction: column;
+  align-items: center;
   justify-content: center;
-  gap: 5px;
-  width: 30px;
-  height: 30px;
   background: none;
   border: none;
   cursor: pointer;
   padding: 0;
+  color: $color-nav-text;
+  font-size: 1.5rem;
 
   @media (min-width: $mobile-breakpoint) {
     display: none;
   }
 
-  span {
-    display: block;
-    width: 100%;
-    height: 2px;
-    background: $color-nav-text;
-    transition: transform $transition-speed, opacity $transition-speed;
+  &:hover {
+    color: $color-nav-hover;
   }
 }
