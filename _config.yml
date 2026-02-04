@@ -5,6 +5,9 @@ baseurl: ""
 
 permalink: pretty
 
+include:
+  - _pages
+
 sass:
   style: compressed
 
