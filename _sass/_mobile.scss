@@ -1,0 +1,145 @@
+// Mobile drawer (CSS-only with checkbox hack)
+.drawer-toggle {
+  display: none;
+}
+
+.drawer-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 200;
+  opacity: 0;
+  transition: opacity $transition-speed;
+
+  @media (min-width: $mobile-breakpoint) {
+    display: none !important;
+  }
+}
+
+.mobile-drawer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: $drawer-width;
+  height: 100vh;
+  background: $color-nav-bg;
+  z-index: 300;
+  transform: translateX(-100%);
+  transition: transform $transition-speed ease;
+  overflow-y: auto;
+
+  @media (min-width: $mobile-breakpoint) {
+    display: none;
+  }
+}
+
+.drawer-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.drawer-close {
+  background: none;
+  border: none;
+  color: $color-nav-text;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  line-height: 1;
+
+  &:hover {
+    color: $color-nav-hover;
+  }
+}
+
+.drawer-nav {
+  list-style: none;
+  padding: 1rem 0;
+
+  a {
+    display: block;
+    padding: 0.75rem 1.5rem;
+    color: $color-nav-text;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-decoration: none;
+
+    &:hover {
+      color: $color-nav-hover;
+      background: rgba(0, 0, 0, 0.1);
+    }
+
+    &.external::after {
+      content: " ↗";
+      font-size: 0.7rem;
+    }
+  }
+}
+
+// Expandable submenu in drawer
+.drawer-submenu-toggle {
+  display: none;
+}
+
+.drawer-submenu-label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 1.5rem;
+  color: $color-nav-text;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  cursor: pointer;
+
+  &::after {
+    content: "+";
+    font-size: 1rem;
+    transition: transform $transition-speed;
+  }
+
+  &:hover {
+    color: $color-nav-hover;
+    background: rgba(0, 0, 0, 0.1);
+  }
+}
+
+.drawer-submenu {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height $transition-speed ease;
+
+  a {
+    padding-left: 2.5rem;
+    font-size: 0.8rem;
+  }
+}
+
+.drawer-submenu-toggle:checked {
+  ~ .drawer-submenu-label::after {
+    transform: rotate(45deg);
+  }
+
+  ~ .drawer-submenu {
+    max-height: 300px;
+  }
+}
+
+// Open drawer when checkbox is checked
+.drawer-toggle:checked {
+  ~ .drawer-overlay {
+    display: block;
+    opacity: 1;
+  }
+
+  ~ .mobile-drawer {
+    transform: translateX(0);
+  }
+}
