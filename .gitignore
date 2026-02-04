@@ -2,3 +2,7 @@ docs/plans
 vendor/
 .bundle/
 _site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+Gemfile.lock
