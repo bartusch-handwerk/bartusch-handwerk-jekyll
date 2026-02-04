@@ -1,0 +1,31 @@
+<header class="site-header">
+  <div class="nav-container">
+    <a href="{{ '/' | relative_url }}" class="site-logo">Bartusch - Holz und Handwerk</a>
+
+    <nav>
+      <ul class="main-nav">
+        <li class="nav-item">
+          <a href="{{ '/' | relative_url }}">Startseite</a>
+        </li>
+        <li class="nav-item has-dropdown">
+          <a href="#">Leistungen</a>
+          <ul class="dropdown">
+            <li><a href="{{ '/leistungen/lohnsaegen/' | relative_url }}">Lohnsägen</a></li>
+            <li><a href="{{ '/leistungen/holztrocknung/' | relative_url }}">Holztrocknung</a></li>
+            <li><a href="{{ '/leistungen/schreinerarbeiten/' | relative_url }}">Schreinerarbeiten</a></li>
+            <li><a href="https://www.ebay-kleinanzeigen.de/pro/Bartusch-Holz-und-Handwerk" target="_blank" rel="noopener" class="external">Holzverkauf</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a href="{{ '/kontakt/' | relative_url }}">Kontakt</a>
+        </li>
+      </ul>
+    </nav>
+
+    <label for="drawer-toggle" class="nav-toggle" aria-label="Menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+  </div>
+</header>
