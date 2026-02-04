@@ -8,7 +8,7 @@
           <a href="{{ '/' | relative_url }}" {% if page.url == '/' %}class="active"{% endif %}>Startseite</a>
         </li>
         <li class="nav-item has-dropdown {% if page.url contains '/leistungen/' %}active{% endif %}">
-          <a href="#">Leistungen <i class="mdi mdi-chevron-down"></i></a>
+          <a href="#" {% if page.url contains '/leistungen/' %}class="active"{% endif %}>Leistungen <i class="mdi mdi-chevron-down"></i></a>
           <ul class="dropdown">
             <li><a href="{{ '/leistungen/lohnsaegen/' | relative_url }}" {% if page.url == '/leistungen/lohnsaegen/' %}class="active"{% endif %}>Lohnsägen</a></li>
             <li><a href="{{ '/leistungen/holztrocknung/' | relative_url }}" {% if page.url == '/leistungen/holztrocknung/' %}class="active"{% endif %}>Holztrocknung</a></li>
