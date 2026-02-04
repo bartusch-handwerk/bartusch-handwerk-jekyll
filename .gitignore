@@ -1,5 +1,5 @@
 docs/plans
-vendor/
+/vendor/
 .bundle/
 _site/
 .sass-cache/
