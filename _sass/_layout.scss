@@ -64,6 +64,15 @@
   }
 }
 
+// Map embed
+.map {
+  margin-top: 2rem;
+
+  iframe {
+    display: block;
+  }
+}
+
 // Footer
 .site-footer {
   background: $color-footer-bg;
