@@ -1,0 +1,15 @@
+title: Bartusch - Holz und Handwerk
+description: Holzbearbeitung und Möbelbau aus einer Hand
+url: "https://bartusch-handwerk.de"
+baseurl: ""
+
+permalink: pretty
+
+sass:
+  style: compressed
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - docs/
+  - README.md
