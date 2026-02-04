@@ -60,7 +60,7 @@
   }
 
   a {
-    color: $color-link;
+    color: var(--color-link);
   }
 }
 
@@ -75,7 +75,7 @@
 
 // Footer
 .site-footer {
-  background: $color-footer-bg;
+  background: var(--color-footer-bg);
   padding: 2rem 1rem;
   margin-top: auto;
 }
@@ -98,7 +98,7 @@
   font-size: 0.9rem;
 
   a {
-    color: $color-text;
+    color: var(--color-text);
   }
 }
 
@@ -108,13 +108,13 @@
   font-size: 0.9rem;
 
   a {
-    color: $color-text;
+    color: var(--color-text);
   }
 }
 
 .footer-copyright {
   font-size: 0.85rem;
-  color: lighten($color-text, 30%);
+  color: var(--color-text-muted);
 
   @media (min-width: $mobile-breakpoint) {
     text-align: right;

@@ -125,3 +125,45 @@
     color: $color-nav-hover;
   }
 }
+
+// Theme toggle
+.theme-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  color: $color-nav-text;
+  font-size: 1.2rem;
+
+  &:hover {
+    color: $color-nav-hover;
+  }
+}
+
+// Icon visibility — default (no data-theme): show sun, hide moon
+.theme-icon-dark {
+  display: none;
+}
+
+// When explicitly dark: show moon, hide sun
+[data-theme="dark"] {
+  .theme-icon-light { display: none; }
+  .theme-icon-dark  { display: inline; }
+}
+
+// When explicitly light: show sun, hide moon (default)
+[data-theme="light"] {
+  .theme-icon-light { display: inline; }
+  .theme-icon-dark  { display: none; }
+}
+
+// OS dark preference fallback (no explicit theme set)
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    .theme-icon-light { display: none; }
+    .theme-icon-dark  { display: inline; }
+  }
+}
