@@ -27,6 +27,13 @@
     width: 100%;
     height: auto;
     display: block;
+    border-radius: 12px;
+    box-shadow: var(--shadow-img);
+    transition: box-shadow 0.2s ease;
+
+    &:hover {
+      box-shadow: var(--shadow-img-hover);
+    }
   }
 }
 
@@ -46,6 +53,13 @@
     aspect-ratio: 1 / 1;
     object-fit: cover;
     display: block;
+    border-radius: 12px;
+    box-shadow: var(--shadow-img);
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+
+    &:hover {
+      box-shadow: var(--shadow-img-hover);
+    }
   }
 }
 
@@ -63,11 +77,22 @@
   cursor: zoom-in;
 
   img {
-    transition: transform 0.2s ease;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
   }
 
   &:hover img {
     transform: scale(1.02);
+    box-shadow: var(--shadow-img-hover);
+  }
+}
+
+// Exclude diagrams/technical images from decorative styling
+.diagram img {
+  border-radius: 0;
+  box-shadow: none;
+
+  &:hover {
+    box-shadow: none;
   }
 }
 
