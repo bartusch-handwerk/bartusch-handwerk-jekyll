@@ -28,6 +28,14 @@
   }
 }
 
+.logo-tagline {
+  display: none;
+
+  @media (min-width: $mobile-breakpoint) {
+    display: inline;
+  }
+}
+
 // Desktop navigation
 .main-nav {
   display: none;
