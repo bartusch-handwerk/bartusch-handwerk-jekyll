@@ -50,7 +50,8 @@
 .nav-item {
   position: relative;
 
-  > a {
+  > a,
+  > .dropdown-label {
     display: block;
     padding: 1rem 1.25rem;
     color: $color-nav-text;
@@ -71,6 +72,10 @@
       color: $color-nav-hover;
       text-decoration: none;
     }
+  }
+
+  > .dropdown-label {
+    cursor: default;
   }
 }
 
