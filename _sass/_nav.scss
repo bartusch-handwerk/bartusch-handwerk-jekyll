@@ -1,3 +1,5 @@
+@use "variables" as *;
+
 .site-header {
   background: $color-nav-bg;
   position: relative;

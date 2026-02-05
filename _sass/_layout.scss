@@ -1,3 +1,5 @@
+@use "variables" as *;
+
 .content {
   flex: 1;
   max-width: $max-content-width;
