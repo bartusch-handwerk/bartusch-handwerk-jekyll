@@ -152,6 +152,8 @@
   padding: 0.5rem;
   color: $color-nav-text;
   font-size: 1.2rem;
+  line-height: 1;
+  transform: translateY(-1px);
 
   &:hover {
     color: $color-nav-hover;
