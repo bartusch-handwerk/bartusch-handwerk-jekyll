@@ -124,16 +124,8 @@
   display: flex;
   flex-direction: column;
 
-  @media (min-width: $mobile-breakpoint) {
-    flex-direction: row;
-  }
-
   .footer-separator {
     display: none;
-
-    @media (min-width: $mobile-breakpoint) {
-      display: inline;
-    }
   }
 
   a {
@@ -144,13 +136,8 @@
 .footer-links {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: 0.15rem;
   font-size: 0.9rem;
-
-  @media (min-width: $mobile-breakpoint) {
-    flex-direction: row;
-    gap: 1.5rem;
-  }
 
   a {
     color: var(--color-text);
