@@ -98,6 +98,20 @@
 
 .footer-contact {
   font-size: 0.9rem;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $mobile-breakpoint) {
+    flex-direction: row;
+  }
+
+  .footer-separator {
+    display: none;
+
+    @media (min-width: $mobile-breakpoint) {
+      display: inline;
+    }
+  }
 
   a {
     color: var(--color-text);
@@ -106,8 +120,14 @@
 
 .footer-links {
   display: flex;
-  gap: 1.5rem;
+  flex-direction: column;
+  gap: 0.5rem;
   font-size: 0.9rem;
+
+  @media (min-width: $mobile-breakpoint) {
+    flex-direction: row;
+    gap: 1.5rem;
+  }
 
   a {
     color: var(--color-text);
