@@ -2,6 +2,7 @@
 layout: page
 title: Kontakt
 permalink: /kontakt/
+description: Schreinermeister Rainer Bartusch in Altensteig. Telefon, E-Mail und Anfahrt zur Werkstatt in der Benzstraße 6.
 ---
 
 <div class="contact-info" markdown="1">

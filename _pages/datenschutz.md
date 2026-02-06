@@ -2,6 +2,7 @@
 layout: page
 title: Datenschutzerklärung
 permalink: /datenschutz/
+description: Datenschutzerklärung von Bartusch - Holz und Handwerk. Informationen zur Datenverarbeitung auf dieser Website.
 ---
 
 <h2>1. Datenschutz auf einen Blick</h2>

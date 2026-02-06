@@ -2,6 +2,7 @@
 layout: page
 title: Leistungen
 permalink: /leistungen/
+description: Lohnsägen mit Blockbandsäge, Holztrocknung in eigener Trockenkammer, Schreinerarbeiten und Massivholzmöbel nach Maß. Alles aus einer Hand in Altensteig.
 ---
 
 Unser Betrieb bietet Ihnen folgende Leistungen:

@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Startseite
+description: Holzstämme präzise zu Balken, Bohlen und Brettern zuschneiden. Spezialisiert auf Edelhölzer wie Eiche, Esche und Obstholz. Massivholzmöbel nach Maß gefertigt.
 ---
 
 # Bartusch - Holz und Handwerk

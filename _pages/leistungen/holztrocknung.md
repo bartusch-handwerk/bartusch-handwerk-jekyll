@@ -2,6 +2,7 @@
 layout: page
 title: Holztrocknung
 permalink: /leistungen/holztrocknung/
+description: Schnittholz schnell und schonend trocknen. Hitzebehandlung bei Wurmbefall nach IPPC/ISPM 15 für Altholz und antike Möbel. Trockenkammer bis 4m Länge.
 ---
 
 ## Holztrocknung

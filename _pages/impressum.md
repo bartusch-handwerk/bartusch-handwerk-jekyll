@@ -2,6 +2,7 @@
 layout: page
 title: Impressum
 permalink: /impressum/
+description: Impressum und rechtliche Angaben zu Bartusch - Holz und Handwerk, Schreinermeister in Altensteig.
 ---
 
 Rainer Bartusch<br>

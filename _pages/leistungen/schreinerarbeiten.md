@@ -2,6 +2,7 @@
 layout: page
 title: Schreinerarbeiten
 permalink: /leistungen/schreinerarbeiten/
+description: Massivholzmöbel nach Maß vom Schreinermeister. Individuelle Anfertigung aus hochwertigen Hölzern wie Eiche, Esche und Obstholz.
 ---
 
 Herstellung von Massivholzmöbel.
