@@ -23,8 +23,10 @@ body {
 a {
   color: var(--color-link);
   text-decoration: none;
+  transition: color $transition-speed ease;
 
   &:hover {
+    color: var(--color-link-hover);
     text-decoration: underline;
   }
 }
