@@ -96,6 +96,20 @@
   }
 }
 
+// 404 error page
+.error-page {
+  text-align: center;
+  padding: 3rem 0;
+
+  p {
+    margin-bottom: 1rem;
+  }
+
+  a {
+    color: var(--color-link);
+  }
+}
+
 // Contact page
 .contact-info {
   line-height: 1.8;
