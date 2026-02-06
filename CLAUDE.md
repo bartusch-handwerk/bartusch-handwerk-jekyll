@@ -17,6 +17,10 @@ bundle exec jekyll build               # Production build → _site/
 
 Videos are stored externally on Nextcloud and listed in `videos.manifest` (tab-separated: `local_path\tnextcloud_url`). They must be downloaded before building.
 
+## Git Workflow
+
+**Never push to remote without asking first.** Always confirm with the user before running `git push`.
+
 ## Architecture
 
 **Static site generation** — Jekyll processes Markdown/HTML → static HTML at build time. No runtime rendering, no database, no backend.
