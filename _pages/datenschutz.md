@@ -51,10 +51,12 @@ den Zugriff auf Informationen im Endger&auml;t des Nutzers (z.&nbsp;B. Device-Fi
 TDDDG umfasst. Die Einwilligung ist jederzeit widerrufbar.</p> <p>Unser(e) Hoster wird bzw. werden Ihre Daten
 nur insoweit verarbeiten, wie dies zur Erf&uuml;llung seiner Leistungspflichten erforderlich ist und unsere
 Weisungen in Bezug auf diese Daten befolgen.</p> <p>Wir setzen folgende(n) Hoster ein:</p>
-<p>ORACLE Deutschland B.V. &amp; Co. KG<br />
-Hauptverwaltung: Riesstra&szlig;e 25, D-80992 M&uuml;nchen<br />
-Registergericht: Amtsgericht M&uuml;nchen, HRA 95603<br />
-Umsatzsteuer-Identifikationsnummer: DE129430206</p>
+<p>Cloudflare Germany GmbH<br />
+Rosental 7, c/o Mindspace<br />
+80331 M&uuml;nchen<br />
+Deutschland</p>
+<p>Registergericht: Amtsgericht M&uuml;nchen, HRB 242623<br />
+Umsatzsteuer-Identifikationsnummer: DE319501868</p>
 <h2>3. Allgemeine Hinweise und Pflicht&shy;informationen</h2>
 <h3>Datenschutz</h3> <p>Die Betreiber dieser Seiten nehmen den Schutz Ihrer pers&ouml;nlichen Daten sehr
 ernst. Wir behandeln Ihre personenbezogenen Daten vertraulich und entsprechend den gesetzlichen
