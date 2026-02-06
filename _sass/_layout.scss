@@ -95,6 +95,15 @@
   }
 }
 
+// Lightbox description dark theme
+.glightbox-clean .gslide-description {
+  background: var(--color-body-bg);
+}
+
+.glightbox-clean .gslide-title {
+  color: var(--color-text);
+}
+
 // Exclude diagrams/technical images from decorative styling
 .diagram img {
   border-radius: 0;
