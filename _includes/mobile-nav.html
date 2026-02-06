@@ -15,6 +15,7 @@
         <input type="checkbox" id="submenu-toggle" class="drawer-submenu-toggle">
         <label for="submenu-toggle" class="drawer-submenu-label">Leistungen <i class="mdi mdi-chevron-down"></i></label>
         <ul class="drawer-submenu">
+          <li><a href="{{ '/leistungen/' | relative_url }}" {% if page.url == '/leistungen/' %}class="active"{% endif %}>Übersicht</a></li>
           <li><a href="{{ '/leistungen/lohnsaegen/' | relative_url }}" {% if page.url == '/leistungen/lohnsaegen/' %}class="active"{% endif %}>Lohnsägen</a></li>
           <li><a href="{{ '/leistungen/holztrocknung/' | relative_url }}" {% if page.url == '/leistungen/holztrocknung/' %}class="active"{% endif %}>Holztrocknung</a></li>
           <li><a href="{{ '/leistungen/schreinerarbeiten/' | relative_url }}" {% if page.url == '/leistungen/schreinerarbeiten/' %}class="active"{% endif %}>Schreinerarbeiten</a></li>
