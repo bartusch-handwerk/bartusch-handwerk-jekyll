@@ -32,6 +32,14 @@
   font-weight: 700;
   padding: 1rem 0;
   text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+
+  @media (min-width: $mobile-breakpoint) {
+    display: block;
+    line-height: inherit;
+  }
 
   &:hover {
     color: $color-nav-hover;
@@ -40,10 +48,18 @@
 }
 
 .logo-tagline {
-  display: none;
+  display: block;
+  font-size: 0.95rem;
+  font-weight: 600;
 
   @media (min-width: $mobile-breakpoint) {
     display: inline;
+    font-size: inherit;
+    font-weight: inherit;
+
+    &::before {
+      content: ' - ';
+    }
   }
 }
 
