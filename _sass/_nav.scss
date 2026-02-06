@@ -60,6 +60,21 @@
     font-weight: 700;
     letter-spacing: 1.3px;
     text-decoration: none;
+    position: relative;
+
+    // Animated underline
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0.5rem;
+      left: 1.25rem;
+      right: 1.25rem;
+      height: 2px;
+      background: $color-nav-hover;
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.3s ease;
+    }
 
     .mdi {
       font-size: 0.85rem;
@@ -71,11 +86,20 @@
     &.active {
       color: $color-nav-hover;
       text-decoration: none;
+
+      &::after {
+        transform: scaleX(1);
+      }
     }
   }
 
   > .dropdown-label {
     cursor: pointer;
+    white-space: nowrap;
+
+    .mdi {
+      margin-right: -0.35rem;
+    }
   }
 }
 
@@ -106,6 +130,21 @@
     letter-spacing: 1px;
     text-decoration: none;
     white-space: nowrap;
+    position: relative;
+
+    // Animated underline for dropdown items
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0.4rem;
+      left: 1.25rem;
+      right: 1.25rem;
+      height: 2px;
+      background: $color-nav-hover;
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.25s ease;
+    }
 
     .mdi {
       font-size: 0.75rem;
@@ -116,6 +155,10 @@
     &.active {
       color: $color-nav-hover;
       background: rgba(0, 0, 0, 0.1);
+
+      &::after {
+        transform: scaleX(1);
+      }
     }
   }
 }
