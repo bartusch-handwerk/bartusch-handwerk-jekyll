@@ -5,6 +5,80 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
   <meta name="description" content="{{ page.description | default: site.description }}">
+
+  <!-- Structured Data for Rich Results -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "LocalBusiness",
+        "@id": "{{ site.url }}/#business",
+        "name": "Bartusch - Holz und Handwerk",
+        "description": "{{ site.description }}",
+        "url": "{{ site.url }}",
+        "telephone": "+49 7453 9569626",
+        "email": "rainer@bartusch-handwerk.de",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Benzstraße 6",
+          "addressLocality": "Altensteig",
+          "postalCode": "72213",
+          "addressCountry": "DE"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 48.5847,
+          "longitude": 8.6044
+        },
+        "priceRange": "$$",
+        "image": "{{ site.url }}/assets/images/workshop-1.jpg",
+        "founder": {
+          "@type": "Person",
+          "name": "Rainer Bartusch",
+          "jobTitle": "Schreinermeister"
+        },
+        "areaServed": {
+          "@type": "GeoCircle",
+          "geoMidpoint": {
+            "@type": "GeoCoordinates",
+            "latitude": 48.5847,
+            "longitude": 8.6044
+          },
+          "geoRadius": "50000"
+        },
+        "knowsAbout": ["Holzbearbeitung", "Möbelbau", "Schreinerarbeiten", "Holztrocknung", "Holzverkauf"]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "{{ site.url }}/#website",
+        "url": "{{ site.url }}",
+        "name": "{{ site.title }}",
+        "publisher": { "@id": "{{ site.url }}/#business" }
+      }
+      {% if page.url != "/" %},
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Startseite",
+            "item": "{{ site.url }}"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "{{ page.title }}",
+            "item": "{{ site.url }}{{ page.url }}"
+          }
+        ]
+      }
+      {% endif %}
+    ]
+  }
+  </script>
+
   <link rel="icon" href="{{ '/assets/images/favicon.ico' | relative_url }}" type="image/png">
   <link rel="stylesheet" href="{{ '/assets/vendor/mdi/css/materialdesignicons.min.css' | relative_url }}">
   <link rel="stylesheet" href="{{ '/assets/vendor/glightbox/glightbox.min.css' | relative_url }}">
