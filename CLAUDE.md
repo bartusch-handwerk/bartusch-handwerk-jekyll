@@ -19,7 +19,7 @@ Videos are stored externally on Nextcloud and listed in `videos.manifest` (tab-s
 
 ## Git Workflow
 
-**Never push to remote without asking first.** Always confirm with the user before running `git push`.
+**Ask before pushing to remote**, unless the user explicitly tells you to push.
 
 ## Architecture
 
