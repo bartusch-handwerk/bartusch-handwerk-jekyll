@@ -15,6 +15,10 @@ Benzstraße 6<br>
 Telefon: [07453/9569626](tel:+4974539569626)<br>
 E-Mail: [rainer@bartusch-handwerk.de](mailto:rainer@bartusch-handwerk.de)
 
+## Gewerbeanmeldung
+
+Die Gewerbeanmeldung nach §19 Kleinunternehmergesetz GewO wurde am 28.08.2002 durch Handwerkskammer Karlsruhe erteilt.
+
 ## Umsatzsteuer-ID
 
 Keine USt-ID vorhanden (Kleinunternehmerregelung §19 UStG)
