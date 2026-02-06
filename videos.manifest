@@ -1,7 +1,7 @@
-# Video manifest — maps local paths to Nextcloud share paths
-# Format: local_path<TAB>share_path
+# Video manifest — maps local paths to Nextcloud share URLs
+# Format: local_path<TAB>url
 #
-# The NEXTCLOUD_DOMAIN secret provides the base URL.
-# Full URL is constructed as: https://${NEXTCLOUD_DOMAIN}/s/${share_path}/download
+# Use ${NEXTCLOUD_DOMAIN} placeholder in URLs — replaced at build time from secret.
+# Example: https://${NEXTCLOUD_DOMAIN}/s/AbCdEf123/download
 
-assets/videos/lohnsaegen.mp4	sRB2ZGtoDPbqLyF
+assets/videos/lohnsaegen.mp4	https://${NEXTCLOUD_DOMAIN}/s/sRB2ZGtoDPbqLyF/download
