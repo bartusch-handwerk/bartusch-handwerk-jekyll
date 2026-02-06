@@ -1,10 +1,7 @@
-# Video manifest — maps local paths to Nextcloud share URLs
-# Format: local_path<TAB>nextcloud_share_url
+# Video manifest — maps local paths to Nextcloud share paths
+# Format: local_path<TAB>share_path
 #
-# To get the share URL: right-click file in Nextcloud → Share → Copy link
-# Append /download to the share link, e.g.:
-#   https://cloud.example.com/s/AbCdEf123 → https://cloud.example.com/s/AbCdEf123/download
-#
-# Then run: ./scripts/download-videos.sh
+# The NEXTCLOUD_DOMAIN secret provides the base URL.
+# Full URL is constructed as: https://${NEXTCLOUD_DOMAIN}/s/${share_path}/download
 
-assets/videos/lohnsaegen.mp4	https://c.xitma.de/s/sRB2ZGtoDPbqLyF/download
+assets/videos/lohnsaegen.mp4	sRB2ZGtoDPbqLyF
