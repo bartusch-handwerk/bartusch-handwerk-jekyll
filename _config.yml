@@ -7,6 +7,7 @@ permalink: pretty
 
 plugins:
   - jekyll-redirect-from
+  - jekyll-sitemap
 
 include:
   - _pages
