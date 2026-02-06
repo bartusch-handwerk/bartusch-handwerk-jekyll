@@ -5,6 +5,9 @@ baseurl: ""
 
 permalink: pretty
 
+plugins:
+  - jekyll-redirect-from
+
 include:
   - _pages
 
