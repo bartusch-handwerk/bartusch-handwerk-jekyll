@@ -5,11 +5,6 @@ SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 PROJECT_DIR="$(dirname "$SCRIPT_DIR")"
 MANIFEST="${1:-videos.manifest}"
 
-if [ -z "${NEXTCLOUD_DOMAIN:-}" ]; then
-  echo "Error: NEXTCLOUD_DOMAIN environment variable not set" >&2
-  exit 1
-fi
-
 if [ ! -f "$PROJECT_DIR/$MANIFEST" ]; then
   echo "Error: $MANIFEST not found in $PROJECT_DIR" >&2
   exit 1
@@ -19,7 +14,7 @@ downloaded=0
 skipped=0
 failed=0
 
-while IFS=$'\t' read -r path share_id; do
+while IFS=$'\t' read -r path url_template; do
   # Skip comments and empty lines
   [[ -z "$path" || "$path" == \#* ]] && continue
 
@@ -32,7 +27,8 @@ while IFS=$'\t' read -r path share_id; do
     continue
   fi
 
-  url="https://${NEXTCLOUD_DOMAIN}/s/${share_id}/download"
+  # Substitute environment variables in URL template
+  url=$(envsubst <<< "$url_template")
   echo "GET   $path"
   if curl -fSL --progress-bar -o "$dest" "$url"; then
     downloaded=$((downloaded + 1))
