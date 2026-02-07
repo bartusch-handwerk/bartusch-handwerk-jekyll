@@ -13,7 +13,7 @@ description: Schreinermeister Rainer Bartusch in Altensteig. Telefon, E-Mail und
 Schreinermeister
 
 **Adresse:**
-Benzstraße 6
+Benzstraße 6<br>
 72213 Altensteig
 
 **Telefon:** [07453/9569626](tel:+4974539569626)
