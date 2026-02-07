@@ -132,7 +132,8 @@
         el.outerHTML = '<iframe src="' + src + '" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>';
       }
       if (localStorage.getItem('mapConsent')) { loadMap(); return; }
-      el.addEventListener('click', function() {
+      var btn = el.querySelector('.map-consent__overlay p');
+      if (btn) btn.addEventListener('click', function() {
         localStorage.setItem('mapConsent', 'true');
         loadMap();
       });
