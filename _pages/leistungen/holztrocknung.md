@@ -21,4 +21,6 @@ Professionelle Hitzebehandlung bei Wurmbefall in Anlehnung nach IPPC / ISPM 15.
 
 Bei der Hitzebehandlung wird das Holz in der Trockenkammer auf ca. 65°C erwärmt. Dieses Verfahren eignet sich zur Rettung von Altholz oder antiken Möbeln. Das Holz wird solange der Wärme ausgesetzt, bis die Kerntemperatur in zwei Messbereichen 56°C erreicht hat und diese Temperatur mindestens 2 Stunden gehalten wird.
 
-<a href="{{ '/assets/images/temperatur-diagramm.png' | relative_url }}" class="glightbox diagram" data-title="Verlauf der Temperaturen"><img src="{{ '/assets/images/temperatur-diagramm.png' | relative_url }}" alt="Verlauf der Temperaturen"></a>
+<a href="{{ '/assets/images/temperatur-diagramm.png' | relative_url }}" class="glightbox diagram" data-title="Verlauf der Temperaturen">
+  <picture><source srcset="{{ '/assets/images/temperatur-diagramm.webp' | relative_url }}" type="image/webp"><img src="{{ '/assets/images/temperatur-diagramm.png' | relative_url }}" alt="Verlauf der Temperaturen" width="1018" height="435" loading="lazy"></picture>
+</a>
